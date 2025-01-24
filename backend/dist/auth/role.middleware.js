@@ -1,0 +1,39 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RoleMiddleware = void 0;
+const common_1 = require("@nestjs/common");
+let RoleMiddleware = class RoleMiddleware {
+    static create(roles) {
+        return (req, res, next) => {
+            console.log('Middleware exécuté. Headers:', req.headers);
+            const user = req.user;
+            console.log('Utilisateur extrait avant vérification :', user);
+            if (!user) {
+                console.error('Utilisateur non authentifié.');
+                throw new common_1.UnauthorizedException('User not authenticated');
+            }
+            if (roles.includes(user.role)) {
+                console.log('Utilisateur autorisé :', user);
+                next();
+            }
+            else {
+                console.error('Accès refusé pour l’utilisateur :', user);
+                throw new common_1.UnauthorizedException('Access denied');
+            }
+        };
+    }
+    use(req, res, next) {
+        throw new Error('Direct instantiation is not supported. Use RoleMiddleware.create() instead.');
+    }
+};
+exports.RoleMiddleware = RoleMiddleware;
+exports.RoleMiddleware = RoleMiddleware = __decorate([
+    (0, common_1.Injectable)()
+], RoleMiddleware);
+//# sourceMappingURL=role.middleware.js.map
