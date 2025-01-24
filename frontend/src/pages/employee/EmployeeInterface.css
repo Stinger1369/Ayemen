@@ -1,0 +1,36 @@
+.employee-interface {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-interface h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.employee-interface ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-interface ul li {
+  margin: 10px 0;
+}
+
+.employee-interface button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.employee-interface button:hover {
+  background-color: #0056b3;
+}

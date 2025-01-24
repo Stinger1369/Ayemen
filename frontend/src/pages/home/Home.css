@@ -1,0 +1,69 @@
+/* Conteneur principal */
+.home-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f7fc;
+}
+
+/* Conteneur de l'image */
+.home-image {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; /* Cache tout ce qui dépasse l'image */
+  border-radius: 10px; /* Assure que tout reste à l'intérieur des coins arrondis */
+}
+
+.home-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay pour le carrousel */
+.carousel-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Style des phrases */
+.carousel-overlay .slide p {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  background: linear-gradient(90deg, #ffffff, #ffd700); /* Dégradé blanc-doré */
+  -webkit-background-clip: text; /* Utilisé pour clipper le texte avec le fond */
+  -webkit-text-fill-color: transparent; /* Rendre le texte transparent pour afficher le dégradé */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation d'entrée */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Titre principal */
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+/* Sous-titre */
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+}

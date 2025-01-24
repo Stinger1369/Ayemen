@@ -1,0 +1,163 @@
+/* Conteneur principal avec un fond animé */
+.particulier-container {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(120deg, #2196f3, #21cbf3, #e3f2fd, #ff8a80, #ffcc80, #b9f6ca);
+  background-size: 400% 400%; /* Nécessaire pour une animation fluide */
+  animation: gradientAnimation 12s infinite alternate; /* Animation du dégradé */
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animation des dégradés de fond */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Titre */
+.particulier-container h1 {
+  font-size: 2.5rem;
+  color: #0d47a1; /* Bleu foncé */
+  margin-bottom: 1rem;
+}
+
+/* Texte */
+.particulier-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Grille des services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Carte de service */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h2 {
+  font-size: 1.8rem;
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.service-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6f61;
+  margin-bottom: 1rem;
+}
+
+.service-button {
+  display: inline-block;
+  background-color: #0d47a1;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.service-button:hover {
+  background-color: #1976d2;
+}
+
+/* Bulles animées */
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  background-color: rgba(255, 255, 255, 0.3); /* Bulles translucides */
+  border-radius: 50%;
+  animation: float 10s infinite ease-in-out;
+  opacity: 0.7;
+}
+
+/* Différentes tailles de bulles */
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 25%;
+  animation-duration: 12s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(4) {
+  width: 100px;
+  height: 100px;
+  left: 75%;
+  animation-duration: 14s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 9s;
+  animation-delay: 5s;
+}
+
+/* Animation des bulles */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}

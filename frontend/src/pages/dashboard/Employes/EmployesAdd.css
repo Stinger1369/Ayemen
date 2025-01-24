@@ -1,0 +1,20 @@
+/* EmployesAdd.css */
+.employes-add {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.add-form input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.add-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

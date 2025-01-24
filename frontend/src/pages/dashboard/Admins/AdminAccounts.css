@@ -1,0 +1,36 @@
+.admin-accounts {
+  padding: 20px;
+}
+
+.admin-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-list li {
+  margin: 10px 0;
+}
+
+.admin-list button {
+  margin-left: 10px;
+}
+
+.admin-form input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+.admin-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-form button:hover {
+  background-color: #0056b3;
+}

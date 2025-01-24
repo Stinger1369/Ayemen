@@ -1,0 +1,14 @@
+.professionnel-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.professionnel-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.professionnel-container p {
+  font-size: 1rem;
+  color: #666;
+}

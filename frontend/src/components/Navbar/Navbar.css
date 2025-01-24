@@ -1,0 +1,90 @@
+/* Style global de la navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3f2fd; /* Bleu clair pour un effet propre et accueillant */
+  padding: 0.2rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo h1 {
+  font-size: 1.8rem;
+  color: #0d47a1; /* Bleu foncé pour un style professionnel */
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Liens de navigation */
+.navbar-links a,
+.navbar-links button {
+  margin-left: 1.5rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #0d47a1; /* Bleu foncé */
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Coins arrondis pour plus de modernité */
+}
+
+/* Style au survol des liens */
+.navbar-links a:hover,
+.navbar-links button:hover {
+  color: #ffffff;
+  background-color: #0d47a1; /* Survol avec couleur bleu foncé */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Légère ombre au survol */
+}
+
+/* Lien actif */
+.navbar-links .active-link {
+  color: #ffffff;
+  background-color: #1976d2; /* Bleu plus clair pour le lien actif */
+  font-weight: bold;
+}
+
+/* Style pour le bouton de déconnexion */
+.navbar-links button {
+  font-size: 1rem;
+  color: #0d47a1;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.navbar-links button:hover {
+  background-color: #ff6f61; /* Rouge léger pour attirer l'attention */
+  color: #ffffff;
+}
+
+/* Responsivité : Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links a,
+  .navbar-links button {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}

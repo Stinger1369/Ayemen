@@ -1,0 +1,36 @@
+.employes-page {
+  padding: 20px;
+}
+
+.employee-form {
+  margin-bottom: 20px;
+}
+
+.employee-form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.employee-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.employee-form button:hover {
+  background-color: #0056b3;
+}
+
+.employee-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-list li {
+  margin-bottom: 10px;
+}
