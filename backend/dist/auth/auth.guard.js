@@ -24,7 +24,7 @@ let AuthGuard = class AuthGuard {
         const excludedRoutes = [
             { path: '/users/signin', method: 'POST' },
             { path: '/users/signup', method: 'POST' },
-            { path: '/schedules', method: 'POST' },
+            { path: '/reservations', method: 'POST' },
         ];
         const isExcluded = excludedRoutes.some((route) => route.path === path && route.method === method);
         if (isExcluded) {
@@ -39,7 +39,9 @@ let AuthGuard = class AuthGuard {
         const token = authHeader.split(' ')[1];
         console.log('Extracted Token:', token);
         try {
-            const decoded = this.jwtService.verify(token, { secret: process.env.JWT_SECRET || 'defaultSecret' });
+            const decoded = this.jwtService.verify(token, {
+                secret: process.env.JWT_SECRET || 'defaultSecret',
+            });
             console.log('Token décodé :', decoded);
             request.user = decoded;
             return true;

@@ -1,163 +1,237 @@
-/* Conteneur principal avec un fond animé */
+/* Conteneur principal */
 .particulier-container {
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(120deg, #2196f3, #21cbf3, #e3f2fd, #ff8a80, #ffcc80, #b9f6ca);
-  background-size: 400% 400%; /* Nécessaire pour une animation fluide */
-  animation: gradientAnimation 12s infinite alternate; /* Animation du dégradé */
+  background: linear-gradient(135deg, #e3f2fd, #b9f6ca); /* Dégradé bleu-vert statique */
   min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
-/* Animation des dégradés de fond */
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
 /* Titre */
 .particulier-container h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #0d47a1; /* Bleu foncé */
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 /* Texte */
 .particulier-container p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 2.5rem;
 }
 
 /* Grille des services */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
+  gap: 2rem;
+  max-width: 1400px;
   margin: 0 auto;
-  max-width: 1200px;
 }
 
 /* Carte de service */
 .service-card {
   background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  text-align: left;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.service-card h2 {
-  font-size: 1.8rem;
+/* Image du service */
+.service-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Contenu de la carte */
+.service-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.service-content h2 {
+  font-size: 1.6rem;
   color: #0d47a1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 .service-description {
   font-size: 1rem;
-  color: #666;
+  color: #555;
   margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .service-price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #ff6f61;
-  margin-bottom: 1rem;
+  color: #ff6f61; /* Corail */
+  margin-bottom: 1.5rem;
 }
 
 .service-button {
-  display: inline-block;
+  display: block;
+  width: 100%;
   background-color: #0d47a1;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
-  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  padding: 0.9rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .service-button:hover {
   background-color: #1976d2;
+  transform: scale(1.02);
 }
 
-/* Bulles animées */
+/* Bulles animées (discrètes) */
 .bubble {
   position: absolute;
-  bottom: -100px;
-  background-color: rgba(255, 255, 255, 0.3); /* Bulles translucides */
+  bottom: -50px;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  animation: float 10s infinite ease-in-out;
-  opacity: 0.7;
+  animation: float 15s infinite ease-in-out;
+  opacity: 0.4;
 }
 
-/* Différentes tailles de bulles */
+/* Tailles et positions des bulles */
 .bubble:nth-child(1) {
-  width: 40px;
-  height: 40px;
-  left: 10%;
-  animation-duration: 8s;
-  animation-delay: 2s;
-}
-
-.bubble:nth-child(2) {
-  width: 60px;
-  height: 60px;
-  left: 25%;
-  animation-duration: 12s;
-  animation-delay: 4s;
-}
-
-.bubble:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  left: 50%;
+  width: 30px;
+  height: 30px;
+  left: 15%;
   animation-duration: 10s;
   animation-delay: 1s;
 }
 
-.bubble:nth-child(4) {
-  width: 100px;
-  height: 100px;
-  left: 75%;
-  animation-duration: 14s;
+.bubble:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  left: 30%;
+  animation-duration: 12s;
   animation-delay: 3s;
 }
 
-.bubble:nth-child(5) {
-  width: 50px;
-  height: 50px;
-  left: 90%;
-  animation-duration: 9s;
-  animation-delay: 5s;
+.bubble:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  left: 60%;
+  animation-duration: 11s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+  width: 60px;
+  height: 60px;
+  left: 80%;
+  animation-duration: 13s;
+  animation-delay: 4s;
 }
 
 /* Animation des bulles */
 @keyframes float {
   0% {
     transform: translateY(0);
-    opacity: 0.8;
+    opacity: 0.4;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.2;
   }
   100% {
-    transform: translateY(-120vh);
+    transform: translateY(-100vh);
     opacity: 0;
+  }
+}
+
+/* Responsivité */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne */
+  }
+
+  .particulier-container {
+    padding: 1.5rem;
+  }
+
+  .particulier-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .particulier-container p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 carte par ligne */
+  }
+
+  .particulier-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .particulier-container p {
+    font-size: 1.1rem;
+  }
+
+  .service-image {
+    height: 180px;
+  }
+
+  .service-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+
+  .service-price {
+    font-size: 1.1rem;
+  }
+
+  .service-button {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .particulier-container {
+    padding: 1rem;
+  }
+
+  .particulier-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .particulier-container p {
+    font-size: 1rem;
+  }
+
+  .service-image {
+    height: 160px;
+  }
+
+  .service-content {
+    padding: 1rem;
   }
 }

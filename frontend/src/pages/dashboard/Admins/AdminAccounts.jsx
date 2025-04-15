@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateUser, signup, getAllUsers, setCurrentUser } from '../../../store/userSlice';
+import { updateUser, signup, getAllUsers, setCurrentUser } from '../../../store/slice/userSlice';
 import './AdminAccounts.css';
 
 const AdminAccounts = () => {

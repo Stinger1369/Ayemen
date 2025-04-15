@@ -1,11 +1,57 @@
 .dashboard {
   display: flex;
+  min-height: 100vh;
+  position: relative;
 }
 
 .dashboard-content {
-  margin-left: 250px; /* La largeur de la sidebar */
+  margin-left: 260px;
   padding: 2rem;
-  width: 100%;
-  height: 100vh;
-  background-color: #f1f1f1;
+  padding-top: 100px;
+  width: calc(100% - 260px);
+  background: #f8f9fa;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+  z-index: 800;
+  min-height: calc(100vh - 80px);
+}
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .dashboard-content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    padding: 1.5rem;
+    padding-top: 90px;
+    min-height: calc(100vh - 70px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dashboard-content {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    padding: 1rem;
+    padding-top: 80px;
+    min-height: calc(100vh - 60px);
+  }
+}
+
+/* Petits téléphones */
+@media (max-width: 360px) {
+  .dashboard-content {
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    padding: 0.5rem;
+    padding-top: 70px;
+    min-height: calc(100vh - 50px);
+  }
+}
+
+/* Mode paysage sur petits écrans */
+@media (max-height: 400px) {
+  .dashboard-content {
+    padding-top: 70px;
+    min-height: calc(100vh - 50px);
+  }
 }

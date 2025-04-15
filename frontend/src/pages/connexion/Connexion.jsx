@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { signin } from '../../store/userSlice';
+import { signin } from '../../store/slice/userSlice';
 import './Connexion.css';
 
 const Connexion = () => {

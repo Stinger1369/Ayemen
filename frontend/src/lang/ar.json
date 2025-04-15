@@ -1,0 +1,21 @@
+{
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "employees": "الموظفون",
+    "add_employee": "إضافة موظف",
+    "edit_employee": "تعديل موظف",
+    "assign_planning": "تعيين جدول",
+    "devis": "عروض الأسعار المستلمة",
+    "contacts": "جهات الاتصال المستلمة",
+    "admins": "إدارة حسابات المشرفين",
+    "reservations": "الحجوزات المستلمة"
+  },
+  "navbar": {
+    "logo": "يسلي",
+    "particulier": "فرد",
+    "professionnel": "محترف",
+    "dashboard": "لوحة التحكم",
+    "connexion": "تسجيل الدخول",
+    "deconnexion": "تسجيل الخروج"
+  }
+}

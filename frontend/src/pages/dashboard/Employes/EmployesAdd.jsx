@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { signup } from '../../../store/userSlice';
+import { signup } from '../../../store/slice/userSlice';
 import './EmployesAdd.css';
 
 const EmployesAdd = () => {

@@ -1,0 +1,21 @@
+{
+  "dashboard": {
+    "title": "Tablero",
+    "employees": "Empleados",
+    "add_employee": "Añadir un empleado",
+    "edit_employee": "Editar un empleado",
+    "assign_planning": "Asignar un horario",
+    "devis": "Presupuestos recibidos",
+    "contacts": "Contactos recibidos",
+    "admins": "Gestionar cuentas de administradores",
+    "reservations": "Reservas recibidas"
+  },
+  "navbar": {
+    "logo": "Yasli",
+    "particulier": "Particular",
+    "professionnel": "Profesional",
+    "dashboard": "Tablero",
+    "connexion": "Iniciar sesión",
+    "deconnexion": "Cerrar sesión"
+  }
+}

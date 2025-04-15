@@ -1,0 +1,21 @@
+{
+  "dashboard": {
+    "title": "Tableau de Bord",
+    "employees": "Employés",
+    "add_employee": "Ajouter un employé",
+    "edit_employee": "Modifier un employé",
+    "assign_planning": "Assigner un planning",
+    "devis": "Devis reçus",
+    "contacts": "Contacts reçus",
+    "admins": "Gérer les comptes admins",
+    "reservations": "Réservations reçues"
+  },
+  "navbar": {
+    "logo": "Yasli",
+    "particulier": "Particulier",
+    "professionnel": "Professionnel",
+    "dashboard": "Dashboard",
+    "connexion": "Connexion",
+    "deconnexion": "Déconnexion"
+  }
+}

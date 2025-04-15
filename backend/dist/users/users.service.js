@@ -54,6 +54,13 @@ let UsersService = class UsersService {
     async findByEmail(email) {
         return this.userModel.findOne({ email }).exec();
     }
+    async findById(userId) {
+        const user = await this.userModel.findById(userId).exec();
+        if (!user) {
+            throw new common_1.NotFoundException('User not found');
+        }
+        return user;
+    }
     async deleteById(userId) {
         const result = await this.userModel.findByIdAndDelete(userId);
         if (!result) {

@@ -12,10 +12,10 @@ const mongoose_1 = require("@nestjs/mongoose");
 const config_1 = require("@nestjs/config");
 const users_module_1 = require("./users/users.module");
 const schedules_module_1 = require("./schedules/schedules.module");
+const reservations_module_1 = require("./reservations/reservations.module");
 const auth_module_1 = require("./auth/auth.module");
 let AppModule = class AppModule {
-    configure(consumer) {
-    }
+    configure(consumer) { }
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
@@ -25,6 +25,7 @@ exports.AppModule = AppModule = __decorate([
             mongoose_1.MongooseModule.forRoot(process.env.MONGO_URI || 'mongodb://localhost:27017/cleaning_service'),
             users_module_1.UsersModule,
             schedules_module_1.SchedulesModule,
+            reservations_module_1.ReservationsModule,
             auth_module_1.AuthModule,
         ],
         providers: [],

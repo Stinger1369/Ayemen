@@ -7,6 +7,7 @@ export declare class UsersService {
     validateUser(email: string, password: string): Promise<User | null>;
     findAll(): Promise<User[]>;
     findByEmail(email: string): Promise<User | null>;
+    findById(userId: string): Promise<User | null>;
     deleteById(userId: string): Promise<void>;
     updateById(userId: string, updateData: Partial<User>): Promise<User>;
     findByRole(role: string): Promise<User[]>;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getAllUsers, updateUser } from '../../../store/userSlice';
+import { getAllUsers, updateUser } from '../../../store/slice/userSlice';
 import './EmployesEdit.css';
 
 const EmployesEdit = () => {

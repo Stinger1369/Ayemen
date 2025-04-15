@@ -1,0 +1,172 @@
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { createReservation } from '../../../store/slice/reservationsSlice';
+import { useNavigate, useLocation } from 'react-router-dom';
+import './ReservationForm.css';
+
+const ReservationForm = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { service } = location.state || {};
+  const { loading, error } = useSelector((state) => state.reservations);
+
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    address: '',
+    date: '',
+    timeSlot: '',
+    notes: '',
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    setErrors({ ...errors, [name]: '' });
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.email) newErrors.email = "L'email est requis";
+    if (!formData.phoneNumber) newErrors.phoneNumber = 'Le numéro de téléphone est requis';
+    if (!formData.address) newErrors.address = "L'adresse est requise";
+    if (!formData.date) newErrors.date = 'La date est requise';
+    if (!formData.timeSlot) newErrors.timeSlot = 'La plage horaire est requise';
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    const reservationData = {
+      serviceType: service?.title || 'Service non spécifié',
+      date: new Date(formData.date),
+      timeSlot: formData.timeSlot,
+      address: formData.address,
+      notes: formData.notes,
+      clientInfo: {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phoneNumber: formData.phoneNumber,
+      },
+    };
+
+    dispatch(createReservation(reservationData)).then((result) => {
+      if (result.meta.requestStatus === 'fulfilled') {
+        navigate('/confirmation', { state: { message: 'Réservation envoyée avec succès !' } });
+      }
+    });
+  };
+
+  return (
+    <div className="reservation-form-container">
+      <h1>Réserver un service</h1>
+      {service && (
+        <p>
+          Service sélectionné : {service.title} ({service.price})
+        </p>
+      )}
+      <form onSubmit={handleSubmit} className="reservation-form">
+        <div className="form-group">
+          <label>Prénom (optionnel)</label>
+          <input
+            type="text"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label>Nom (optionnel)</label>
+          <input
+            type="text"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label>Email *</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
+        </div>
+        <div className="form-group">
+          <label>Numéro de téléphone *</label>
+          <input
+            type="tel"
+            name="phoneNumber"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+            required
+          />
+          {errors.phoneNumber && <span className="error">{errors.phoneNumber}</span>}
+        </div>
+        <div className="form-group">
+          <label>Adresse *</label>
+          <input
+            type="text"
+            name="address"
+            value={formData.address}
+            onChange={handleChange}
+            required
+          />
+          {errors.address && <span className="error">{errors.address}</span>}
+        </div>
+        <div className="form-group">
+          <label>Date *</label>
+          <input
+            type="date"
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+            required
+          />
+          {errors.date && <span className="error">{errors.date}</span>}
+        </div>
+        <div className="form-group">
+          <label>Plage horaire *</label>
+          <select name="timeSlot" value={formData.timeSlot} onChange={handleChange} required>
+            <option value="">Sélectionnez une horaire</option>
+            <option value="09:00-11:00">09:00 - 11:00</option>
+            <option value="11:00-13:00">11:00 - 13:00</option>
+            <option value="14:00-16:00">14:00 - 16:00</option>
+            <option value="16:00-18:00">16:00 - 18:00</option>
+          </select>
+          {errors.timeSlot && <span className="error">{errors.timeSlot}</span>}
+        </div>
+        <div className="form-group">
+          <label>Notes (optionnel)</label>
+          <textarea
+            name="notes"
+            value={formData.notes}
+            onChange={handleChange}
+            placeholder="Ajoutez des informations supplémentaires si nécessaire"
+          />
+        </div>
+        {error && <p className="error">{error}</p>}
+        <button type="submit" disabled={loading}>
+          {loading ? 'Envoi...' : 'Confirmer la réservation'}
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default ReservationForm;

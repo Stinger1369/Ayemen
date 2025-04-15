@@ -1,0 +1,21 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "employees": "Employees",
+    "add_employee": "Add an employee",
+    "edit_employee": "Edit an employee",
+    "assign_planning": "Assign a schedule",
+    "devis": "Received quotes",
+    "contacts": "Received contacts",
+    "admins": "Manage admin accounts",
+    "reservations": "Received reservations"
+  },
+  "navbar": {
+    "logo": "Yasli",
+    "particulier": "Individual",
+    "professionnel": "Professional",
+    "dashboard": "Dashboard",
+    "connexion": "Login",
+    "deconnexion": "Logout"
+  }
+}

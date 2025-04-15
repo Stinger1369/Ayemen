@@ -1,0 +1,152 @@
+.language-selector {
+  position: relative;
+}
+
+.language-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.language-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.language-label {
+  font-size: 0.9rem;
+}
+
+.language-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0.5rem 0;
+  z-index: 1001;
+}
+
+.language-menu.open {
+  display: block;
+}
+
+.language-option {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.language-option:hover {
+  background: #f0f0f0;
+}
+
+.flag {
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background-size: cover;
+}
+
+.flag-fr {
+  background-image: url('https://flagcdn.com/w20/fr.png');
+}
+
+.flag-gb {
+  background-image: url('https://flagcdn.com/w20/gb.png');
+}
+
+.flag-es {
+  background-image: url('https://flagcdn.com/w20/es.png');
+}
+
+.flag-sa {
+  background-image: url('https://flagcdn.com/w20/sa.png');
+}
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .language-toggle {
+    font-size: 0.9rem;
+  }
+
+  .language-label {
+    font-size: 0.8rem;
+  }
+
+  .flag {
+    width: 18px;
+    height: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .language-selector {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .language-toggle {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .language-menu {
+    position: static;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .language-option {
+    color: #fff;
+  }
+
+  .language-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .flag {
+    width: 18px;
+    height: 12px;
+  }
+}
+
+/* Petits téléphones */
+@media (max-width: 360px) {
+  .language-option {
+    font-size: 0.8rem;
+  }
+
+  .flag {
+    width: 16px;
+    height: 10px;
+  }
+}
+
+/* Mode paysage */
+@media (max-height: 400px) {
+  .language-menu {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+}

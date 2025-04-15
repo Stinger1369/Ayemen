@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setCurrentUser } from '../../store/userSlice';
+import { setCurrentUser } from '../../store/slice/userSlice';
 import { useNavigate } from 'react-router-dom';
 import './EmployeeInterface.css';
 

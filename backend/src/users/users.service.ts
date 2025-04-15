@@ -26,27 +26,27 @@ export class UsersService {
 
   // Connexion (signin)
   async validateUser(email: string, password: string): Promise<User | null> {
-  console.log('Validation de l’utilisateur :', email);
+    console.log('Validation de l’utilisateur :', email);
 
-  const user = await this.userModel.findOne({ email }).exec();
-  if (!user) {
-    console.log('Utilisateur non trouvé');
-    throw new BadRequestException('User not found');
+    const user = await this.userModel.findOne({ email }).exec();
+    if (!user) {
+      console.log('Utilisateur non trouvé');
+      throw new BadRequestException('User not found');
+    }
+
+    console.log('Utilisateur trouvé :', user);
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    console.log('Le mot de passe correspond :', isMatch);
+
+    if (!isMatch) {
+      console.log('Mot de passe incorrect');
+      throw new BadRequestException('Invalid credentials');
+    }
+
+    console.log('Utilisateur validé avec succès');
+    return user;
   }
-
-  console.log('Utilisateur trouvé :', user);
-
-  const isMatch = await bcrypt.compare(password, user.password);
-  console.log('Le mot de passe correspond :', isMatch);
-
-  if (!isMatch) {
-    console.log('Mot de passe incorrect');
-    throw new BadRequestException('Invalid credentials');
-  }
-
-  console.log('Utilisateur validé avec succès');
-  return user;
-}
 
   // Trouver tous les utilisateurs
   async findAll(): Promise<User[]> {
@@ -56,6 +56,15 @@ export class UsersService {
   // Trouver un utilisateur par email
   async findByEmail(email: string): Promise<User | null> {
     return this.userModel.findOne({ email }).exec();
+  }
+
+  // Trouver un utilisateur par ID
+  async findById(userId: string): Promise<User | null> {
+    const user = await this.userModel.findById(userId).exec();
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+    return user;
   }
 
   // Supprimer un utilisateur
