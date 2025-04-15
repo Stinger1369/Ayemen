@@ -5,6 +5,8 @@ import { UsersModule } from './users/users.module';
 import { SchedulesModule } from './schedules/schedules.module';
 import { ReservationsModule } from './reservations/reservations.module';
 import { AuthModule } from './auth/auth.module';
+import { ReviewsModule } from './review/reviews.module';
+import { ContactsModule } from './contacts/contacts.module';
 
 @Module({
   imports: [
@@ -16,6 +18,8 @@ import { AuthModule } from './auth/auth.module';
     SchedulesModule,
     ReservationsModule,
     AuthModule,
+    ReviewsModule,
+    ContactsModule,
   ],
   providers: [],
 })

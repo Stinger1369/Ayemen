@@ -1,0 +1,76 @@
+.politique-confidentialite {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.politique-confidentialite h1 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.politique-confidentialite section {
+  margin-bottom: 2.5rem;
+}
+
+.politique-confidentialite h2 {
+  font-size: 1.8rem;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e6f0fa;
+  padding-bottom: 0.5rem;
+}
+
+.politique-confidentialite p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.politique-confidentialite ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.politique-confidentialite ul li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .politique-confidentialite {
+    padding: 2rem 1rem;
+  }
+
+  .politique-confidentialite h1 {
+    font-size: 2rem;
+  }
+
+  .politique-confidentialite h2 {
+    font-size: 1.5rem;
+  }
+
+  .politique-confidentialite p,
+  .politique-confidentialite ul li {
+    font-size: 1rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+}

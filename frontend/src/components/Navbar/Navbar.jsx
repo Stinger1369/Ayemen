@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
+import Meteo from '../Meteo/Meteo';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -87,6 +88,9 @@ const Navbar = () => {
             </NavLink>
           </li>
         )}
+        <li>
+          <Meteo />
+        </li>
         <li>
           <LanguageSelector onMenuToggle={() => setIsMenuOpen(false)} />
         </li>

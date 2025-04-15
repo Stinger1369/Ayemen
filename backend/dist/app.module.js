@@ -14,6 +14,8 @@ const users_module_1 = require("./users/users.module");
 const schedules_module_1 = require("./schedules/schedules.module");
 const reservations_module_1 = require("./reservations/reservations.module");
 const auth_module_1 = require("./auth/auth.module");
+const reviews_module_1 = require("./review/reviews.module");
+const contacts_module_1 = require("./contacts/contacts.module");
 let AppModule = class AppModule {
     configure(consumer) { }
 };
@@ -27,6 +29,8 @@ exports.AppModule = AppModule = __decorate([
             schedules_module_1.SchedulesModule,
             reservations_module_1.ReservationsModule,
             auth_module_1.AuthModule,
+            reviews_module_1.ReviewsModule,
+            contacts_module_1.ContactsModule,
         ],
         providers: [],
     })

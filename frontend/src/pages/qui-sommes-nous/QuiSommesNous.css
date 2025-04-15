@@ -1,5 +1,526 @@
 .qui-sommes-nous {
+  background: linear-gradient(135deg, #e6f0fa, #ffffff);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Effet de brillance global */
+.qui-sommes-nous::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 5s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Section Introduction */
+.intro-section {
+  position: relative;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.intro-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 71, 161, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-content {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+}
+
+.intro-icon-wrapper {
+  margin-bottom: 1rem;
+}
+
+.section-icon {
+  font-size: 3rem;
+  color: #ff6f61;
+  transition: transform 0.3s ease;
+}
+
+.broom-icon {
+  color: #ffd700;
+  animation: sweep 2s infinite;
+}
+
+@keyframes sweep {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+.intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.intro-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Section Header (utilisé dans plusieurs sections) */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Section Notre histoire */
+.history-section {
+  padding: 5rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.history-section h2 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+}
+
+.history-icon {
+  color: #0d47a1;
+}
+
+.history-section p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Section Notre mission */
+.mission-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #e6f0fa, #f5f7fa);
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+}
+
+.mission-icon {
+  color: #28a745;
+}
+
+.mission-section p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.mission-image {
+  margin-top: 2rem;
+}
+
+.mission-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Nos valeurs */
+.values-section {
+  padding: 5rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+}
+
+.values-icon {
+  color: #ff6f61;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-item {
+  position: relative;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa, #e6f0fa);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.value-item::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.value-item:hover::before {
+  opacity: 1;
+}
+
+.value-item.quality {
+  border-left: 4px solid #0d47a1;
+}
+
+.value-item.ecology {
+  border-left: 4px solid #28a745;
+}
+
+.value-item.trust {
+  border-left: 4px solid #ff6f61;
+}
+
+.value-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.quality-icon {
+  color: #0d47a1;
+}
+
+.ecology-icon {
+  color: #28a745;
+}
+
+.trust-icon {
+  color: #ff6f61;
+}
+
+.value-item h3 {
+  font-size: 1.6rem;
+  color: #0d47a1;
+  margin-bottom: 0.75rem;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Section Notre équipe */
+.team-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #e6f0fa, #f5f7fa);
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+}
+
+.team-icon {
+  color: #ff6f61;
+}
+
+.team-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.team-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.team-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-image {
+  transform: scale(1.05);
+}
+
+.shine-effect {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  animation: shine 3s infinite;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #28a745;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Section Appel à l’action */
+.cta-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 5s infinite;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.star-icon {
+  color: #ffd700;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.cta-button {
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.contact-button:hover {
+  background-color: #fff;
+  color: #0d47a1;
+  transform: scale(1.05);
+}
+
+.reservation-button {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+.reservation-button:hover {
+  background-color: #e65b50;
+  transform: scale(1.05);
+}
+
+/* Responsivité */
+@media (max-width: 1024px) {
+  .values-grid,
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-section,
+  .history-section,
+  .mission-section,
+  .values-section,
+  .team-section,
+  .cta-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .intro-section h1,
+  .history-section h2,
+  .mission-section h2,
+  .values-section h2,
+  .team-section h2,
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro-content p,
+  .history-section p,
+  .mission-section p,
+  .team-section p,
+  .cta-section p {
+    font-size: 1rem;
+  }
+
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-image {
+    height: 180px;
+  }
+
+  .section-icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .intro-section,
+  .history-section,
+  .mission-section,
+  .values-section,
+  .team-section,
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+
+  .intro-section h1,
+  .history-section h2,
+  .mission-section h2,
+  .values-section h2,
+  .team-section h2,
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .team-image {
+    height: 160px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section-icon {
+    font-size: 1.5rem;
+  }
 }

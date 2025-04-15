@@ -17,5 +17,336 @@
     "dashboard": "Dashboard",
     "connexion": "Connexion",
     "deconnexion": "Déconnexion"
+  },
+  "home": {
+    "hero": {
+      "phrases": [
+        "Faites confiance à Yasli pour un espace toujours propre et sain.", "Services de nettoyage pour particuliers et professionnels à Marseille.", "Un environnement propre pour votre maison ou votre entreprise.", "Des experts en ménage et entretien à votre service.", "Choisissez Yasli, votre partenaire propreté de confiance."
+      ],
+      "book_now": "Réserver maintenant"
+    },
+    "about": {
+      "title": "À propos de Yasli",
+      "description": "Yasli est une entreprise de nettoyage basée à Marseille, dédiée à offrir des services de qualité supérieure pour les particuliers et les professionnels. Que vous ayez besoin d’un ménage à domicile, d’un entretien de jardin, ou d’un nettoyage de bureaux, notre équipe d’experts est là pour répondre à vos besoins avec professionnalisme et efficacité.",
+      "stats": {
+        "experience": "Années d’expérience",
+        "satisfied_clients": "Clients satisfaits",
+        "eco_friendly": "Engagement écologique"
+      }
+    },
+    "services": {
+      "title": "Nos services populaires",
+      "description": "Des solutions de nettoyage pour tous vos besoins à Marseille et ses environs.",
+      "loading": "Chargement des services...",
+      "house_cleaning": "Nettoyage de maison",
+      "house_cleaning_desc": "Un intérieur impeccable pour votre confort.",
+      "window_cleaning": "Nettoyage de vitres",
+      "window_cleaning_desc": "Des vitres éclatantes en un rien de temps.",
+      "garden_maintenance": "Entretien de jardin",
+      "garden_maintenance_desc": "Un jardin soigné par nos experts.",
+      "office_cleaning": "Nettoyage de bureaux",
+      "office_cleaning_desc": "Un environnement de travail propre et professionnel.",
+      "retail_cleaning": "Nettoyage de commerces",
+      "retail_cleaning_desc": "Gardez votre commerce accueillant et impeccable.",
+      "post_construction_cleaning": "Nettoyage après travaux",
+      "post_construction_cleaning_desc": "Éliminez poussières et débris après vos chantiers.",
+      "learn_more": "En savoir plus"
+    },
+    "testimonials": {
+      "title": "Ce que nos clients disent de nous",
+      "view_all": "Voir tous les avis",
+      "loading": "Chargement des témoignages...",
+      "error": "Erreur lors de la récupération des avis",
+      "add_review": "Ajouter un avis",
+      "modal": {
+        "title": "Ajouter un avis",
+        "name_label": "Nom *",
+        "firstName_label": "Prénom",
+        "email_label": "Email",
+        "address_label": "Adresse",
+        "role_label": "Rôle *",
+        "role_placeholder": "Sélectionner un rôle",
+        "role_particulier": "Particulier",
+        "role_professionnel": "Professionnel",
+        "quote_label": "Votre avis *",
+        "image_label": "Votre photo (optionnel)",
+        "submit": "Envoyer",
+        "submitting": "Envoi en cours..."
+      },
+      "pagination": {
+        "previous": "Précédent",
+        "next": "Suivant",
+        "page_info": "Page {current} sur {total}"
+      }
+    },
+    "why_choose": {
+      "title": "Pourquoi choisir Yasli ?",
+      "qualified_team": "Équipe qualifiée",
+      "qualified_team_desc": "Nos professionnels sont formés pour offrir un service de haute qualité.",
+      "eco_friendly": "Produits écologiques",
+      "eco_friendly_desc": "Nous utilisons des produits respectueux de l’environnement pour un nettoyage sûr.",
+      "satisfaction": "Satisfaction garantie",
+      "satisfaction_desc": "Nous nous engageons à répondre à vos attentes à 100%.",
+      "availability": "Disponibilité",
+      "availability_desc": "Nous sommes disponibles 7j/7 pour répondre à vos besoins de nettoyage."
+    },
+    "cta": {
+      "title": "Prêt à rendre votre espace impeccable ?",
+      "description": "Contactez-nous dès aujourd’hui pour un devis gratuit ou réservez directement en ligne.",
+      "book_now": "Réserver maintenant",
+      "contact_us": "Nous contacter"
+    }
+  },
+  "footer": {
+    "navigation": {
+      "title": "Navigation",
+      "home": "Accueil",
+      "individuals": "Particuliers",
+      "professionals": "Professionnels"
+    },
+    "about": {
+      "title": "À propos",
+      "who_we_are": "Qui sommes-nous ?",
+      "contact_us": "Contactez-nous"
+    },
+    "follow_us": {
+      "title": "Suivez-nous",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "bottom": {
+      "copyright": "© 2024 Yasli. Tous droits réservés."
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Remplissez le formulaire ci-dessous pour nous contacter.",
+    "firstName_label": "Prénom",
+    "lastName_label": "Nom",
+    "email_label": "Email",
+    "phoneNumber_label": "Numéro de téléphone",
+    "message_label": "Message",
+    "submit": "Envoyer",
+    "submitting": "Envoi en cours...",
+    "success_message": "Votre message a été envoyé avec succès !",
+    "error_message": "Une erreur s’est produite. Veuillez réessayer."
+  },
+  "contacts_received": {
+    "title": "Contacts Reçus",
+    "description": "Consultez les messages de contact ici.",
+    "loading": "Chargement des messages...",
+    "error": "Erreur lors de la récupération des messages",
+    "no_contacts": "Aucun message de contact pour le moment.",
+    "email": "Email",
+    "phoneNumber": "Numéro de téléphone",
+    "message": "Message",
+    "status": "Statut",
+    "received_at": "Reçu le"
+  },
+  "qui_sommes_nous": {
+    "title": "Qui sommes-nous ?",
+    "intro_description": "Découvrez l’histoire, la mission et les valeurs de Yasli, votre partenaire de confiance pour des services de nettoyage à Marseille.",
+    "history": {
+      "title": "Notre histoire",
+      "description": "Fondée en 2014 à Marseille, Yasli est née d’une passion pour la propreté et le bien-être. Notre fondatrice, Marie Dupont, a voulu créer une entreprise qui allie qualité, professionnalisme et respect de l’environnement. Aujourd’hui, nous sommes fiers de servir des centaines de clients, particuliers et professionnels, dans toute la région."
+    },
+    "mission": {
+      "title": "Notre mission",
+      "description": "Chez Yasli, notre mission est de transformer chaque espace en un lieu propre, sain et accueillant. Nous nous engageons à offrir des services de nettoyage exceptionnels tout en utilisant des produits écologiques pour préserver votre santé et celle de la planète."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "quality": "Qualité",
+      "quality_desc": "Nous nous efforçons d’offrir un service irréprochable à chaque intervention.",
+      "ecology": "Écologie",
+      "ecology_desc": "Nous utilisons des produits respectueux de l’environnement pour un nettoyage durable.",
+      "trust": "Confiance",
+      "trust_desc": "Nous construisons des relations de confiance avec nos clients grâce à notre transparence."
+    },
+    "team": {
+      "title": "Notre équipe",
+      "description": "Rencontrez les membres clés de notre équipe qui travaillent ensemble pour garantir votre satisfaction.",
+      "members": [
+        {
+          "name": "Marie Dupont",
+          "role": "Fondatrice",
+          "description": "Marie a fondé Yasli avec une vision claire : offrir des services de nettoyage de qualité supérieure à Marseille."
+        },
+        {
+          "name": "Pierre Martin",
+          "role": "Responsable des opérations",
+          "description": "Pierre supervise les opérations quotidiennes pour garantir un service impeccable à chaque client."
+        },
+        {
+          "name": "Sophie Lambert",
+          "role": "Responsable qualité",
+          "description": "Sophie s’assure que chaque prestation répond aux normes de qualité les plus élevées."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à nous faire confiance ?",
+      "description": "Contactez-nous dès aujourd’hui pour découvrir nos services ou réserver une prestation.",
+      "contact": "Nous contacter",
+      "book": "Réserver maintenant"
+    }
+  },
+  "footer": {
+    "navigation": {
+      "title": "Navigation",
+      "home": "Accueil",
+      "individuals": "Particuliers",
+      "professionals": "Professionnels"
+    },
+    "about": {
+      "title": "À propos",
+      "who_we_are": "Qui sommes-nous ?",
+      "contact_us": "Contactez-nous"
+    },
+    "follow_us": {
+      "title": "Suivez-nous",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "bottom": {
+      "copyright": "© 2024 Yasli. Tous droits réservés."
+    },
+    "rgpd": {
+      "title": "Nous respectons votre vie privée",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant, vous acceptez notre politique de confidentialité.",
+      "privacy_policy": "politique de confidentialité",
+      "accept": "Accepter",
+      "reject": "Refuser"
+    }
+  },
+  "politique_confidentialite": {
+    "title": "Politique de Confidentialité",
+    "intro": "Cette politique de confidentialité décrit la manière dont Yasli, une entreprise de nettoyage basée à Marseille, collecte, utilise, et protège les données personnelles que vous nous fournissez via notre site web.",
+    "responsable": {
+      "title": "1. Responsable du traitement des données",
+      "description": "Yasli, située au 4 Place Esquiros, 13010 Marseille, France, est le responsable du traitement des données personnelles collectées via ce site. Vous pouvez nous contacter par email à contact@yasli.fr ou par téléphone au +33 4 91 00 00 00."
+    },
+    "donnees_collectees": {
+      "title": "2. Données personnelles collectées",
+      "description": "Nous collectons les types de données suivants :",
+      "liste": [
+        "Données d’identification : nom, prénom, adresse email, numéro de téléphone.",
+        "Données de réservation : type de service, date, heure, adresse de prestation.",
+        "Données de navigation : adresse IP, type de navigateur, pages visitées, cookies.",
+        "Données de contact : messages envoyés via le formulaire de contact."
+      ]
+    },
+    "finalites": {
+      "title": "3. Finalités du traitement",
+      "description": "Les données collectées sont utilisées pour :",
+      "liste": [
+        "Gérer vos demandes de réservation et de contact.",
+        "Fournir et organiser nos services de nettoyage.",
+        "Améliorer notre site et nos services grâce à l’analyse de votre navigation.",
+        "Vous envoyer des communications (si vous y avez consenti), comme des offres promotionnelles ou des rappels de rendez-vous.",
+        "Respecter nos obligations légales et réglementaires."
+      ]
+    },
+    "base_legale": {
+      "title": "4. Base légale du traitement",
+      "description": "Nous traitons vos données personnelles sur les bases légales suivantes :",
+      "liste": [
+        "Exécution d’un contrat : pour gérer vos réservations et répondre à vos demandes.",
+        "Consentement : pour l’utilisation de cookies non essentiels et l’envoi de communications marketing.",
+        "Intérêt légitime : pour améliorer nos services et analyser l’utilisation de notre site.",
+        "Obligation légale : pour répondre aux exigences réglementaires."
+      ]
+    },
+    "conservation": {
+      "title": "5. Durée de conservation des données",
+      "description": "Nous conservons vos données personnelles aussi longtemps que nécessaire pour atteindre les finalités décrites ci-dessus :",
+      "liste": [
+        "Données de réservation : conservées pendant 5 ans après la fin de la prestation.",
+        "Données de contact : conservées pendant 3 ans après votre dernière interaction avec nous.",
+        "Données de navigation : conservées pendant 13 mois maximum (conformément à la législation sur les cookies)."
+      ],
+      "note": "Au-delà de ces durées, vos données seront anonymisées ou supprimées, sauf si une obligation légale nous impose de les conserver plus longtemps."
+    },
+    "destinataires": {
+      "title": "6. Destinataires des données",
+      "description": "Vos données peuvent être partagées avec :",
+      "liste": [
+        "Nos employés et prestataires impliqués dans la fourniture des services de nettoyage.",
+        "Nos partenaires techniques (hébergeurs, fournisseurs d’outils d’analyse) qui agissent en tant que sous-traitants.",
+        "Les autorités légales, si nous y sommes contraints par la loi."
+      ],
+      "note": "Nous ne vendons ni ne louons vos données personnelles à des tiers à des fins commerciales."
+    },
+    "cookies": {
+      "title": "7. Cookies",
+      "description": "Nous utilisons des cookies pour :",
+      "liste": [
+        "Assurer le bon fonctionnement du site (cookies essentiels).",
+        "Analyser l’utilisation du site (cookies analytiques).",
+        "Personnaliser votre expérience et proposer des publicités ciblées (cookies marketing, avec votre consentement)."
+      ],
+      "consent": "Lors de votre première visite, une bannière vous permet de gérer vos préférences en matière de cookies. Vous pouvez modifier vos choix à tout moment via les paramètres de votre navigateur."
+    },
+    "securite": {
+      "title": "8. Sécurité des données",
+      "description": "Nous mettons en place des mesures techniques et organisationnelles pour protéger vos données personnelles contre les accès non autorisés, la perte ou la divulgation. Par exemple :",
+      "liste": [
+        "Chiffrement des données sensibles (HTTPS, SSL).",
+        "Accès restreint à vos données pour le personnel autorisé.",
+        "Mises à jour régulières de nos systèmes pour prévenir les failles de sécurité."
+      ]
+    },
+    "droits": {
+      "title": "9. Vos droits",
+      "description": "Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :",
+      "liste": [
+        "Droit d’accès : vous pouvez demander une copie de vos données.",
+        "Droit de rectification : vous pouvez corriger des données inexactes.",
+        "Droit à l’effacement : vous pouvez demander la suppression de vos données.",
+        "Droit à la limitation : vous pouvez limiter certains traitements de vos données.",
+        "Droit à la portabilité : vous pouvez recevoir vos données dans un format structuré.",
+        "Droit d’opposition : vous pouvez vous opposer à certains traitements (ex. marketing direct)."
+      ],
+      "exercice": "Pour exercer ces droits, contactez-nous à contact@yasli.fr. Vous avez également le droit de déposer une plainte auprès de la CNIL (www.cnil.fr) si vous estimez que vos droits ne sont pas respectés."
+    },
+    "modifications": {
+      "title": "10. Modifications de la politique",
+      "description": "Nous pouvons mettre à jour cette politique de confidentialité pour refléter les évolutions de nos pratiques ou les changements réglementaires. La version la plus récente sera toujours disponible sur cette page, avec une date de mise à jour. Nous vous encourageons à la consulter régulièrement.",
+      "date": "Dernière mise à jour : 15 avril 2025"
+    },
+    "contact": {
+      "title": "11. Contact",
+      "description": "Pour toute question concernant cette politique de confidentialité ou la gestion de vos données personnelles, vous pouvez  contacter leDeveloper du site à l’adresse suivante:",
+      "liste": [
+        "Email : contact@yasli.fr",
+        "Téléphone : +33 6 59 16 53 03",
+        "Adresse : 4 Place Esquiros, 13010 Marseille, France"
+      ]
+    }
+  },
+  "rgpd": {
+    "title": "Gérer le consentement aux cookies",
+    "description": "Ce site utilise des cookies et vous donne le contrôle sur ceux que vous souhaitez activer.",
+    "privacy_policy": "Vie Privée",
+    "accept": "Accepter",
+    "reject": "Refuser",
+    "show_preferences": "Enregistrer les préférences",
+    "preferences": {
+      "functionnel": {
+        "title": "Fonctionnel",
+        "always_active": "Toujours activé",
+        "description": "Le stockage ou l’accès technique est strictement nécessaire dans la finalité d’intérêt légitime de permettre l’utilisation d’un service spécifique explicitement demandé par l’abonné ou l’internaute, ou dans le seul but d’effectuer la transmission d’une communication sur un réseau de communications électroniques."
+      },
+      "statistiques": {
+        "title": "Statistiques",
+        "description": "Le stockage ou l’accès technique qui est utilisé exclusivement à des fins statistiques."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Le stockage ou l’accès technique est nécessaire pour créer des profils d’internautes afin d’envoyer des publicités, ou pour suivre l’internaute sur un site web ou sur plusieurs sites web ayant des finalités marketing similaires."
+      }
+    }
   }
 }

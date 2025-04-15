@@ -1,0 +1,47 @@
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.weather-info img {
+  width: 24px;
+  height: 24px;
+}
+
+.weather-info span {
+  font-size: 0.9rem;
+}
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .weather-info {
+    font-size: 0.9rem;
+  }
+
+  .weather-info img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .weather-info {
+    padding: 0 1rem;
+  }
+}
+
+/* Petits téléphones */
+@media (max-width: 360px) {
+  .weather-info {
+    font-size: 0.8rem;
+  }
+
+  .weather-info img {
+    width: 18px;
+    height: 18px;
+  }
+}

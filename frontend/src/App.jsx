@@ -14,6 +14,10 @@ import ReservationForm from './pages/dashboard/Reservation/ReservationForm';
 import Confirmation from './pages/confirmation/Confirmation';
 import QuiSommesNous from './pages/qui-sommes-nous/QuiSommesNous';
 import Contact from './pages/Contact/Contact';
+import TestimonialsPage from './pages/Testimonials/TestimonialsPage';
+import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite/PolitiqueConfidentialite';
+
+
 import './App.css';
 
 
@@ -35,6 +39,10 @@ const App = () => {
               <Route path="/confirmation" element={<Confirmation />} />
               <Route path="/qui-sommes-nous" element={<QuiSommesNous />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/testimonials" element={<TestimonialsPage />} />
+              <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+
+
             </Routes>
           </main>
           <Footer />

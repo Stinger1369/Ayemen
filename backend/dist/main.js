@@ -4,6 +4,7 @@ const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const path_1 = require("path");
 dotenv.config();
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
@@ -12,6 +13,9 @@ async function bootstrap() {
         origin: 'http://localhost:5173',
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         credentials: true,
+    });
+    app.useStaticAssets((0, path_1.join)(__dirname, '..', 'uploads'), {
+        prefix: '/uploads/',
     });
     console.log('Starting server...');
     console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
