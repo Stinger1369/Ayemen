@@ -222,108 +222,132 @@
     }
   },
   "politique_confidentialite": {
-    "title": "Politique de Confidentialité",
-    "intro": "Cette politique de confidentialité décrit la manière dont Yasli, une entreprise de nettoyage basée à Marseille, collecte, utilise, et protège les données personnelles que vous nous fournissez via notre site web.",
+    "title": "Protection des données personnelles et de la vie privée (Loi RGPD)",
+    "intro": "Yasli attache la plus grande importance à la protection de votre vie privée et s’engage à vous assurer le meilleur niveau de protection de vos données à caractère personnel en conformité avec les réglementations européennes et françaises qui lui sont applicables en matière de protection des données personnelles.",
+    "transparency": "Dans un souci de transparence, cette rubrique a pour objet de vous expliquer les traitements de données à caractère personnel mis en œuvre dans le cadre de l’utilisation des services proposés par Yasli ainsi que la manière dont vous pouvez exercer vos droits sur vos données personnelles.",
     "responsable": {
-      "title": "1. Responsable du traitement des données",
-      "description": "Yasli, située au 4 Place Esquiros, 13010 Marseille, France, est le responsable du traitement des données personnelles collectées via ce site. Vous pouvez nous contacter par email à contact@yasli.fr ou par téléphone au +33 4 91 00 00 00."
+      "title": "Qui est le responsable du traitement de vos données ?",
+      "description": "Dans le cadre des services proposés par Yasli, le responsable du traitement de vos données personnelles est : Yasli, société à responsabilité limitée (SARL) au capital de 10.000 euros, immatriculée au registre du commerce et des sociétés de Marseille sous le numéro B 123 456 789."
     },
     "donnees_collectees": {
-      "title": "2. Données personnelles collectées",
-      "description": "Nous collectons les types de données suivants :",
+      "title": "Quelles données collectons-nous ?",
+      "description": "Yasli traite vos données :",
       "liste": [
-        "Données d’identification : nom, prénom, adresse email, numéro de téléphone.",
-        "Données de réservation : type de service, date, heure, adresse de prestation.",
-        "Données de navigation : adresse IP, type de navigateur, pages visitées, cookies.",
-        "Données de contact : messages envoyés via le formulaire de contact."
+        "D’inscription : données figurant sur les formulaires de réservation ou de contact telles que vos nom, prénom, coordonnées, téléphone, email.",
+        "Liées à l’utilisation des services de Yasli : données permettant de vous identifier et de vous authentifier (logs de connexion, adresse IP), celles relatives aux réservations, aux lieux et moments de prestation, à votre parcours de navigation sur le site, aux dates et horaires de consultation du site."
       ]
     },
     "finalites": {
-      "title": "3. Finalités du traitement",
-      "description": "Les données collectées sont utilisées pour :",
-      "liste": [
-        "Gérer vos demandes de réservation et de contact.",
-        "Fournir et organiser nos services de nettoyage.",
-        "Améliorer notre site et nos services grâce à l’analyse de votre navigation.",
-        "Vous envoyer des communications (si vous y avez consenti), comme des offres promotionnelles ou des rappels de rendez-vous.",
-        "Respecter nos obligations légales et réglementaires."
-      ]
-    },
-    "base_legale": {
-      "title": "4. Base légale du traitement",
-      "description": "Nous traitons vos données personnelles sur les bases légales suivantes :",
-      "liste": [
-        "Exécution d’un contrat : pour gérer vos réservations et répondre à vos demandes.",
-        "Consentement : pour l’utilisation de cookies non essentiels et l’envoi de communications marketing.",
-        "Intérêt légitime : pour améliorer nos services et analyser l’utilisation de notre site.",
-        "Obligation légale : pour répondre aux exigences réglementaires."
-      ]
-    },
-    "conservation": {
-      "title": "5. Durée de conservation des données",
-      "description": "Nous conservons vos données personnelles aussi longtemps que nécessaire pour atteindre les finalités décrites ci-dessus :",
-      "liste": [
-        "Données de réservation : conservées pendant 5 ans après la fin de la prestation.",
-        "Données de contact : conservées pendant 3 ans après votre dernière interaction avec nous.",
-        "Données de navigation : conservées pendant 13 mois maximum (conformément à la législation sur les cookies)."
-      ],
-      "note": "Au-delà de ces durées, vos données seront anonymisées ou supprimées, sauf si une obligation légale nous impose de les conserver plus longtemps."
+      "title": "Pourquoi collectons-nous vos données ?",
+      "description": "Yasli utilise vos données personnelles principalement pour les finalités suivantes :",
+      "gestion": {
+        "title": "La gestion de vos réservations et la relation client, notamment :",
+        "liste": [
+          "Gestion des réservations.",
+          "La lutte contre la fraude.",
+          "Mise en œuvre des prestations de nettoyage, facturation et comptabilité.",
+          "Recueil de vos commentaires et avis.",
+          "Gestion des réclamations et du service après-vente.",
+          "Gestion de vos demandes liées à l’exercice de vos droits, notamment d’accès, de rectification, et d’opposition issus du règlement européen sur la protection des données personnelles.",
+          "Réalisation d’analyses/statistiques pour répondre à des enquêtes ou demandes menées par des organismes d’intérêts publics, ou des administrations, ou autorités administratives ou judiciaires.",
+          "Tracer et administrer les preuves que Yasli doit rapporter en application de ses obligations légales ou réglementaires ou pour des besoins liés à la gestion du contentieux."
+        ]
+      },
+      "prospection": {
+        "title": "La réalisation d’opérations de prospection commerciale :",
+        "liste": [
+          "Pour vous envoyer des messages personnalisés ou non par voie électronique, selon votre profil.",
+          "Mise en place de jeux ou concours.",
+          "Pour analyser votre utilisation des services, afin que nous puissions mieux vous connaître, apprécier l’intérêt que représente les services proposés ainsi que les messages que nous vous adressons et vous proposer des offres, contenus et des services adaptés à votre profil."
+        ]
+      },
+      "techniques": {
+        "title": "La réalisation d’opérations techniques liées aux traitements de vos données personnelles :",
+        "liste": [
+          "Les opérations techniques liées au redressement d’adresses.",
+          "L’attribution d’un identifiant numérique lié à vos données, afin que nous puissions interagir avec vous via notre site internet.",
+          "Pour analyser votre utilisation des services, afin que nous puissions mieux vous connaître, apprécier l’intérêt que représente les services proposés ainsi que les messages que nous vous adressons et vous proposer des offres, contenus et des services adaptés à votre profil.",
+          "Les opérations techniques, organisationnelles ou de cybersécurité liées à la détection d’anomalie et à la sécurisation de vos données ainsi que de nos systèmes d’information à partir desquels vos données sont traitées."
+        ]
+      },
+      "bases": "L’ensemble de ces traitements sont basés sur :",
+      "bases": {
+        "liste": [
+          "L’exécution d’un contrat.",
+          "L’exécution d’une obligation légale.",
+          "L’intérêt légitime de Yasli.",
+          "Votre consentement."
+        ]
+      }
     },
     "destinataires": {
-      "title": "6. Destinataires des données",
-      "description": "Vos données peuvent être partagées avec :",
+      "title": "Qui a accès à vos données ?",
+      "description": "Vos données pourront être transmises :",
       "liste": [
-        "Nos employés et prestataires impliqués dans la fourniture des services de nettoyage.",
-        "Nos partenaires techniques (hébergeurs, fournisseurs d’outils d’analyse) qui agissent en tant que sous-traitants.",
-        "Les autorités légales, si nous y sommes contraints par la loi."
+        "Aux personnes habilitées des équipes Yasli (ex : services en charge du marketing, des études et analyses, du service clients, du contentieux, des affaires comptables et fiscales ou de l’informatique et de la sécurité des systèmes d’information).",
+        "Aux prestataires et sous-traitants de Yasli intervenant par exemple pour les opérations suivantes : lutte contre la fraude, la préparation, l’exécution et le suivi de vos réservations.",
+        "Aux autorités administratives ou judiciaires le cas échéant dans le cadre du respect de nos obligations légales ou pour nous permettre d’assurer la défense de nos droits et intérêts."
       ],
-      "note": "Nous ne vendons ni ne louons vos données personnelles à des tiers à des fins commerciales."
+      "note": "À noter : Vos données ne seront ni louées, ni revendues à des tiers à des fins d’utilisation marketing."
     },
-    "cookies": {
-      "title": "7. Cookies",
-      "description": "Nous utilisons des cookies pour :",
+    "conservation": {
+      "title": "Combien de temps conservons-nous vos données ?",
+      "description": "Nous avons déterminé des règles précises concernant la durée de conservation de vos données : En tout état de cause, ces données ne seront conservées que pour la durée nécessaire à l’accomplissement des finalités ci-dessus précisées, augmentée du délai de prescription légale.",
+      "inscription": "Les données recueillies lors de votre réservation ou de votre contact seront conservées pendant toute la durée de votre interaction avec nous. Ces données pourront être conservées pendant un délai de 3 ans suivant le dernier contact de votre part.",
+      "specific": "Les données vous concernant sont susceptibles d’être conservées plus longtemps. Pour certains types de traitement, la conservation des données fait l’objet de durées de conservation spécifiques, notamment :",
       "liste": [
-        "Assurer le bon fonctionnement du site (cookies essentiels).",
-        "Analyser l’utilisation du site (cookies analytiques).",
-        "Personnaliser votre expérience et proposer des publicités ciblées (cookies marketing, avec votre consentement)."
-      ],
-      "consent": "Lors de votre première visite, une bannière vous permet de gérer vos préférences en matière de cookies. Vous pouvez modifier vos choix à tout moment via les paramètres de votre navigateur."
+        "6 ans pour les documents fiscaux.",
+        "10 ans pour les pièces comptables.",
+        "Toute la durée nécessaire pour les contentieux et jusqu’à épuisement des voies de recours.",
+        "3 ans pour les données relatives aux noms, prénoms et adresses des clients suspectés de fraude et à l’origine d’impayés. Ces données seront enregistrées dans un traitement spécifique destiné à détecter de nouvelles transactions présentant un risque de fraude.",
+        "3 ans pour les données relatives aux pièces d’identité en cas d’exercice de leurs droits par les personnes concernées."
+      ]
     },
     "securite": {
-      "title": "8. Sécurité des données",
-      "description": "Nous mettons en place des mesures techniques et organisationnelles pour protéger vos données personnelles contre les accès non autorisés, la perte ou la divulgation. Par exemple :",
-      "liste": [
-        "Chiffrement des données sensibles (HTTPS, SSL).",
-        "Accès restreint à vos données pour le personnel autorisé.",
-        "Mises à jour régulières de nos systèmes pour prévenir les failles de sécurité."
-      ]
+      "title": "Comment vos données sont-elles sécurisées ?",
+      "generale": {
+        "title": "Règles générales :",
+        "description": "Yasli met en place les mesures techniques, physiques et organisationnelles appropriées pour préserver la sécurité et la confidentialité de vos données."
+      },
+      "prestataires": "Yasli choisit des sous-traitants ou des prestataires qui présentent des garanties en termes de qualité, de sécurité, de fiabilité et de ressources pour assurer la mise en œuvre de mesures techniques et organisationnelles en matière de sécurité des traitements."
+    },
+    "transfert": {
+      "title": "Vos données sont-elles traitées en dehors de l’Union Européenne ?",
+      "description": "Vos données peuvent être transmises à des sociétés prestataires de Yasli situées dans des pays hors Union Européenne pour les activités liées à la gestion de la fraude.",
+      "garanties": "Yasli met tout en œuvre pour obtenir les garanties nécessaires à la sécurisation de tels transferts."
     },
     "droits": {
-      "title": "9. Vos droits",
-      "description": "Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :",
+      "title": "Quels sont vos droits ?",
+      "description": "Vous bénéficiez des droits suivants :",
       "liste": [
-        "Droit d’accès : vous pouvez demander une copie de vos données.",
-        "Droit de rectification : vous pouvez corriger des données inexactes.",
-        "Droit à l’effacement : vous pouvez demander la suppression de vos données.",
-        "Droit à la limitation : vous pouvez limiter certains traitements de vos données.",
-        "Droit à la portabilité : vous pouvez recevoir vos données dans un format structuré.",
-        "Droit d’opposition : vous pouvez vous opposer à certains traitements (ex. marketing direct)."
+        "Un droit à l’information.",
+        "Un droit d’accès.",
+        "Un droit de rectification.",
+        "Un droit d’opposition et d’effacement au traitement de ses données.",
+        "Un droit d’opposition au profilage.",
+        "Un droit à la limitation du traitement.",
+        "Un droit à la portabilité de ses données.",
+        "Un droit de définir des directives relatives au sort de vos données après votre décès."
       ],
-      "exercice": "Pour exercer ces droits, contactez-nous à contact@yasli.fr. Vous avez également le droit de déposer une plainte auprès de la CNIL (www.cnil.fr) si vous estimez que vos droits ne sont pas respectés."
+      "exercice": "Pour exercer vos droits, écrivez-nous à : Yasli / Service client, 4 Place Esquiros, 13010 Marseille, France.",
+      "formalites": "Votre demande doit être signée et accompagnée de la photocopie d’un titre d’identité portant votre signature et préciser l’adresse à laquelle doit vous parvenir la réponse. Nous vous adresserons une réponse dans les meilleurs délais."
     },
-    "modifications": {
-      "title": "10. Modifications de la politique",
-      "description": "Nous pouvons mettre à jour cette politique de confidentialité pour refléter les évolutions de nos pratiques ou les changements réglementaires. La version la plus récente sera toujours disponible sur cette page, avec une date de mise à jour. Nous vous encourageons à la consulter régulièrement.",
-      "date": "Dernière mise à jour : 15 avril 2025"
+    "cookies": {
+      "title": "Yasli utilise-t-il des cookies, tags et traceurs ?",
+      "description": "Les cookies émis par Yasli sur le site vous permettent, en tant qu’utilisateur, de bénéficier de façon optimale et personnalisée des services proposés par Yasli. Ainsi, les cookies nous permettent :",
+      "liste": [
+        "De mémoriser vos préférences d’affichage (langue utilisée, paramètres d’affichage, système d’exploitation utilisé, etc.) et d’adapter la présentation du site lors de vos visites, selon les matériels et logiciels de visualisation ou de lecture que comporte votre terminal et qui sont utilisés pour la navigation sur le site.",
+        "De mémoriser les informations relatives, par exemple, à un formulaire que vous avez rempli ou à un service (réservation, contact) ou une information que vous avez choisie.",
+        "De vous permettre d’accéder à des espaces réservés et personnels du site, tels que votre compte personnel, grâce à des identifiants ou des données personnelles vous concernant antérieurement communiquées, vous permettant le cas échéant d’accéder à des contenus personnalisés.",
+        "De mettre en œuvre des mesures de sécurité.",
+        "De mesurer et d’analyser la fréquentation et d’utilisation du site, de ses rubriques et services proposés, permettant à Yasli de réaliser des études et d’améliorer l’intérêt et l’ergonomie du site et de ses services."
+      ],
+      "note": "À noter : Pour respecter un maximum votre vie privée, Yasli a choisi de ne pas afficher de publicité. (Ainsi, pas de retargeting ni de remarketing)"
     },
     "contact": {
-      "title": "11. Contact",
-      "description": "Pour toute question concernant cette politique de confidentialité ou la gestion de vos données personnelles, vous pouvez  contacter leDeveloper du site à l’adresse suivante:",
-      "liste": [
-        "Email : contact@yasli.fr",
-        "Téléphone : +33 6 59 16 53 03",
-        "Adresse : 4 Place Esquiros, 13010 Marseille, France"
-      ]
+      "title": "Qui contacter en cas de difficultés ?",
+      "description": "Pour toutes questions, vous pouvez nous contacter via cette adresse email : contact@yasli.fr",
+      "dpo": "Délégué à la Protection des Données Personnelles : Yasli / Service client, 4 Place Esquiros, 13010 Marseille, France."
     }
   },
   "rgpd": {
